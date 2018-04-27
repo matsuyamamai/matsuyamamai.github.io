@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RambleOn</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+02
+$(function(){
+03
+    $('a[href^=#]').click(function(){
+04
+        var speed = 500;
+05
+        var href= $(this).attr("href");
+06
+        var target = $(href == "#" || href == "" ? 'html' : href);
+07
+        var position = target.offset().top;
+08
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+09
+        return false;
+10
+    });
+11
+});
+12
+</script>
+
+
+</head>
+<body id="index">
+
+  <!-- header始まり -->
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="../../images/logo.png" alt="RambleOn"></a>
+    </div>
+    <nav>
+      <ul class="global-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#culture">Culture</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#company">Company</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header終わり -->
+
+  <!-- wrap始まり -->
+  <div id="wrap">
+    <div class="content">
+      <div class="ii">
+      <img src="../../images/InvisibleInsanity_0_0.png" alt="invisibleinsanity">
+      <h1>Invisible<br>Insanity</h1>
+  </div>
+  <!-- section-about始まり -->
+  <section class="section-about">
+      <div id="about">　</div>
+    <p>ソフトウェアが世界を飲み込み、あらゆる産業はデジタル化し、</p>
+    <p>あらゆる企業はソフトウェア企業になると予測されています。</p>
+    <p></p>
+    <p>美容産業もその例外ではなく、</p>
+    <p>ソフトウェアによって大きく変わろうとしています。</p>
+    <p>我々は、コンピューターテクノロジーを通して”美”を再定義し、</p>
+    <p>人間の本質的な美しさを追求していきます。</p>
+  </section>
+
+  <!-- section-culture始まり -->
+  <section class="section-culture">
+    <div id="culture"><h2>Culture</h2></div>
+      <img class="culture-resize" src="../../images/culture.svg" alt="culture">
+  </section>
+
+  <!-- section-survice始まり -->
+  <section class="section-survice">
+      <div id="service"><h2>Service</h2></div>
+        <div class="section-survice-1">
+          <a href="http://app.befy.jp/ja/" target="blank"><img class="image-resize" src="../../images/befy_app_icon.png" alt="befy"></a>
+          <h3>Befy</h3>
+              <p>持って生まれたあなただけの美しい「グッドスキン」へ。<br>
+            美肌のための本格スキンケアアプリ。</p>
+        </div>
+  </section>
+
+    <!-- section-news始まり -->
+    <section class="section-news">
+      <div id="news"><h2>News</h2></div>
+        <div class="section-news-1">
+          <p><h3>2018.01.20</h3>　　美容を学べるデジタルスクール「BeautyLearning」を公開しました。</p>
+          <p><h3>2017.12.29</h3>　　Befyが、イオン情報誌『mom』12月号の「体にいいもの大賞2017」のアプリ部門に選ばれました。</p>
+          <p><h3>2017.11.30</h3>　　Befyが、PREPPY 2018年2月号で紹介されました。</p>
+          <p><h3>2017.11.03</h3>　　Befyが、今週の女性自身の「iPhone X発売！主婦のための〝本当に使える〟スマホアプリ講座」特集に掲載されました。</p>
+          <p><h3>2017.10.01</h3>　　あなた専用スキンケアメソッドアプリBefy[ベフィ]の正式版をリリースしました。</p>
+  </div>
+  </p>
+    </section>
+
+  <!-- section-company始まり -->
+  <section class="section-company">
+    <div id="company"><h2 class="company-midashi">Company</h2></div>
+    <div class="section-company-1">
+    <h3>株式会社RambleOn</h3>
+    <table>
+      <tr>
+        <th>代表者</th>
+        <td>屋冨祖 和弥</td>
+      </tr>
+
+      <tr>
+        <th>設立</th>
+        <td>2016年01月12日</td>
+      </tr>
+
+      <tr>
+        <th>事業内容</th>
+        <td>WEBサイト、WEBアプリの企画、開発、制作、運営及び管理</td>
+      </tr>
+
+      <tr>
+        <th>事業所在地</th>
+        <td>〒151-0071　東京都渋谷区本町3-11-3 301  <br> <a href="https://goo.gl/maps/PzAs5P4ptTB2" target="blank" style="text-decoration:none"><fontcolor="#ffffff">GoogleMap</a></td>
+      </tr>
+    </table>
+    </section>
+
+
+
+
+
+  <!-- section-contact始まり -->
+  <div class="section-contact">
+      <div id="contact"><h2>Contact</h2></div>
+      <div class="section-contact-form">
+    <form>
+      <dl>
+        <dt><span class="required">お名前</span></dt>
+          <dd><input type="text" name="name" class="name" required></dd>
+          <dt><span class="required">メールアドレス</span></dt>
+          <dd><input type="email" name="email" class="email" required></dd>
+          <dt>お電話番号</dt>
+          <dd><input type="tel" name="tel" class="tel"></dd>
+          <dt>メッセージ</dt>
+          <dd><textarea name="message" class="message"></textarea></dd>
+        </dl>
+        <button type="submit" class="btn">送信</button>
+      </form>
+      </div>
+
+    <div class="attention">
+      <p>※「<span class="required"></span>」の付いている項目は必須項目です。<br>
+    ※メッセージ送信後、48時間以内に担当者よりご連絡いたします。</p>
+    </div>
+</div>
+
+  </div>
+  </div>
+  <!-- wrap終わり -->
+
+  <!-- footer始まり -->
+  <footer>
+    <small>©RambleOn, inc. All Right Reserved.</small>
+  </footer>
+  <!-- footer終わり -->
+
+</body>
+</html>
